@@ -13,10 +13,16 @@
     />
   </head>
   <body>
+    <div class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Weather App</a>
+      </div>
+    </div>
     <div class="container">
       <form novalidate>
         <div class="form-floating">
           <input
+            id="search"
             type="string"
             class="form-control"
             placeholder="search"
@@ -28,6 +34,14 @@
         </div>
         <button>Search</button>
       </form>
+      <div class="card" style="display: none">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <div class="card-text">
+            <p class="temp"></p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
     <script
