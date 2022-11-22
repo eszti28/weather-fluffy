@@ -24,7 +24,7 @@ exports.up = function (db) {
         primaryKey: true,
         unsigned: true,
       },
-      date: { type: 'datetime', notNull: true },
+      date: { type: 'int', notNull: true },
       city: { type: 'string', notNull: true },
       coordlon: { type: 'float', notNull: true },
       coordlat: { type: 'float', notNull: true },
