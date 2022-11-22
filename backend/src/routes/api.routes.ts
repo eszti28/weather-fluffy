@@ -6,5 +6,7 @@ const apiRouter = express.Router();
 
 apiRouter.use(cors());
 apiRouter.use(express.json());
-apiRouter.use('/weather/:city', weatherController.weatherInfo);
+apiRouter.get('/weather/:city', weatherController.getWeatherInfo);
+apiRouter.post('/weather', weatherController.addWeatherInfo);
+
 export default apiRouter;

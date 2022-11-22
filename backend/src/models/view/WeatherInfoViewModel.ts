@@ -1,5 +1,4 @@
-export interface WeatherInfoDomainModel {
-  id: number;
+export interface WeatherInfoViewModel {
   date: number;
   city: string;
   coordlon: number;
