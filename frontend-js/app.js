@@ -20,7 +20,6 @@ button.addEventListener('click', (e) => {
         addToDatabase(city.value);
       } else {
         appendInfoFromDB(json);
-        console.log(json);
       }
     })
     .catch((err) => console.log(err));
