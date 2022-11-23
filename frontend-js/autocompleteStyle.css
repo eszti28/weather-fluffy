@@ -2,13 +2,14 @@ ul {
   list-style: none;
 }
 .list {
+  padding: 0;
   width: 100%;
   background-color: #f8f8ff;
   border-radius: 0 0 5px 5px;
 }
 .list-items {
-  padding: 5px;
+  padding: 10px;
 }
 .list-items:hover {
-  background-color: #dddddd;
+  background-color: white;
 }
