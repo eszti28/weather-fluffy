@@ -19,8 +19,8 @@
       </div>
     </div>
     <div class="container">
-      <form novalidate>
-        <div class="form-floating">
+      <form novalidate class="m-5">
+        <div class="form-floating mb-3">
           <input
             id="search"
             type="string"
@@ -29,16 +29,21 @@
             required
           />
           <label for="search" class="form-label">Search</label>
-          <div class="invalid-feedback">Invalid city</div>
-          <div class="valid-feedback">Correct city</div>
         </div>
-        <button>Search</button>
+        <button class="btn btn-outline-primary">Search</button>
       </form>
-      <div class="card" style="display: none">
+      <div class="card mt-2" style="display: none">
+        <h2 class="card-header"></h2>
         <div class="card-body">
-          <div class="card-title"></div>
+          <!-- <div class="card-title"></div> -->
           <div class="card-text">
-            <p class="temp"></p>
+            <p class="date info"></p>
+            <p class="coord info"></p>
+            <p class="temp info"></p>
+            <p class="pressure info"></p>
+            <p class="humidity info"></p>
+            <p class="wind info"></p>
+            <p class="clouds info"></p>
           </div>
         </div>
       </div>
