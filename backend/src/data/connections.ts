@@ -1,5 +1,6 @@
 import mysql from 'mysql';
 import config from '../config';
+import { logger } from '../middlewares/logger';
 
 const databaseConnection = mysql.createConnection({
   host: config.mysql.host,
@@ -13,6 +14,7 @@ export const db = {
     databaseConnection.connect(err => {
       if (err) {
         console.error('Cannot connect to the database', err);
+        logger('Cannot connect to the database');
         return;
       }
       console.log('Database Connection is OK');
@@ -23,9 +25,11 @@ export const db = {
       databaseConnection.query(query, values, (err, result) => {
         if (err) {
           reject(err);
+          logger(`${err}`);
           return;
         }
         resolve(JSON.parse(JSON.stringify(result)));
+        logger(`${query}, ${values}`);
       });
     });
   },

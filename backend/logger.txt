@@ -1,0 +1,6 @@
+
+SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Győr
+INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669205002,Győr,17.6351,47.6833,5.06,1002,93,5.66,360,100
+SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Valami
+SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Nagykanizsa
+404 - City not found - /api/weather/ - POST - ::1
