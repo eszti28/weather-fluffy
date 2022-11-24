@@ -1,4 +1,3 @@
-import { logger } from './logger';
 const localhost = 'http://localhost:3000/api';
 const weatherID = '46d4b7c5d34fa20f4e66d522546c5d5f';
 const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
@@ -27,7 +26,6 @@ button.addEventListener('click', (e) => {
       }
     })
     .catch((err) => {
-      logger(`${err}`);
       let message = '';
       langEng.classList.contains('active') === false
         ? (message = 'Nem találtunk ilyen várost')
@@ -54,7 +52,6 @@ function addToDatabase(city) {
       });
     })
     .catch((err) => {
-      logger(`${err}`);
       let message = '';
       langEng.classList.contains('active') === false
         ? (message = 'Nem találtunk ilyen várost')
