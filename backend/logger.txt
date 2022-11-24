@@ -1,3 +1,4 @@
+
 SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Győr
 INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669205002,Győr,17.6351,47.6833,5.06,1002,93,5.66,360,100
 SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Nagykanizsa
@@ -6,26 +7,3 @@ SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Budapest
 INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669209306,Budapest,19.0399,47.498,5.13,1000,94,2.68,46,100
 SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Toronto
 INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669209580,Toronto,-79.4163,43.7001,-0.39,1022,88,4.12,310,20
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Budapest
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669209959,Budapest,19.0399,47.498,5.43,1001,94,2.57,40,100
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Budapest
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669209959,Budapest,19.0399,47.498,5.43,1001,94,2.57,40,100
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Valami
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Nagykanizsa
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669211325,Nagykanizsa,16.991,46.4535,4.77,1005,98,4.01,348,100
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Budapest
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669210976,Budapest,19.0399,47.498,5.43,1001,94,2.24,23,100
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Nagykanizsa
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Győr
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669214490,Győr,17.6351,47.6833,5.06,1003,93,5.14,340,100
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Miskolc
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669217167,Miskolc,20.7833,48.1,4.57,1004,80,2.43,2,90
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Győr
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669216801,Győr,17.6351,47.6833,5.06,1003,93,4.12,320,100
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Miskolc
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Debrecen
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669218423,Debrecen,21.6333,47.5333,5.87,1002,87,3.6,40,0
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Debrecen
-SELECT * FROM weatherinfo WHERE city = ? ORDER BY id DESC LIMIT 1;, Miskolc
-INSERT INTO weatherinfo (date, city, coordlon, coordlat, temperature, pressure, humidity, windSpeed, windDeg, clouds) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);, 1669281241,Miskolc,20.7833,48.1,4.78,1009,91,1.13,7,100
-404 - City not found - /api/weather/ - POST - ::1
