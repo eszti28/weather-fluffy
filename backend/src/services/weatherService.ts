@@ -6,7 +6,6 @@ export const weatherService = {
     const cityInfo = await weatherRepository.getWeatherInfo(city);
     const minutes = this.timeSince(cityInfo[0]?.date);
 
-    console.log(minutes);
     if (cityInfo.length !== 0 && minutes < 10) {
       return cityInfo;
     } else {
@@ -30,7 +29,7 @@ export const weatherService = {
     await weatherRepository.addWeatherInfo(mappedWeatherData);
   },
 
-  timeSince(date: number) {
+  timeSince(date: number): number {
     const dateNow = Date.now();
     let seconds = Math.floor((dateNow - date * 1000) / 1000);
     let interval = seconds / 60;
